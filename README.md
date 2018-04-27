@@ -147,3 +147,22 @@ Put your switch in RCM mode, connect it to your computer, and run the following:
 sudo ./scripts/boot_linux.sh
 ```
 Your switch boot to the Linux kernel. If you see Penguins, it worked.
+
+## Debian rootfs
+
+For this section, we will use the repo's directory again as the current working directory. I'll be using 'rootfs' as the folder name.
+
+### Wi-fi fix
+Thanks to Quantum on the ReSwitched Discord for the original wi-fi reboot script. All I did was move it to a systemd service.
+
+
+```
+# if you haven't already
+sudo chroot ./rootfs
+
+wget --no-check-certificate http://raw.githubusercontent.com/nvitaterna/switch-linux-guide/debian-rootfs/scripts/check_wlan.sh -P /usr/local/bin
+wget --no-check-certificate http://raw.githubusercontent.com/nvitaterna/switch-linux-guide/debian-rootfs/scripts/check_wlan.service -P /etc/systemd/system
+
+systemctl enable check_wlan.service
+
+```
