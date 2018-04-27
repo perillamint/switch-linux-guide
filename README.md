@@ -113,7 +113,7 @@ make
 ### Build coreboot
 ```
 cd bootloader/coreboot
-make nintendo_switch_defconfig
+make nintendo-switch_defconfig
 make iasl
 make
 ```
