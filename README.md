@@ -91,6 +91,12 @@ sudo tar -xzf downloads/brcm.tar.gz -C /lib/firmware/brcm
 ## Build
 Now that we have all of our dependencies ready, we will start to build the kernel.
 
+### Set up the build environment
+```
+export ARCH=arm64
+export CROSS_COMPILE=aarch64-linux-gnu-
+```
+
 ### Build the shofel2 exploit
 ```
 cd bootloader/shofel2/exploit
@@ -100,7 +106,6 @@ make
 ### Build u-boot
 ```
 cd bootloader/u-boot
-export CROSS_COMPILE=aarch64-linux-gnu-
 make nintendo-switch_defconfig
 make
 ```
@@ -129,8 +134,6 @@ make
 ### Build linux
 ```
 cd linux
-export ARCH=arm64
-export CROSS_COMPILE=aarch64-linux-gnu-
 make nintendo-switch_defconfig
 make
 ```
