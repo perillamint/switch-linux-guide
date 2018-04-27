@@ -112,7 +112,7 @@ make
 
 ### Build coreboot
 ```
-cd coreboot
+cd bootloader/coreboot
 make nintendo-switch_defconfig
 make iasl
 make
@@ -127,13 +127,13 @@ make -C util/cbfstool
 
 ### Build imx_usb_loader
 ```
-cd imx_usb_loader
+cd bootloader/imx_usb_loader
 make
 ```
 
 ### Build linux
 ```
-cd linux
+cd bootloader/linux
 make nintendo-switch_defconfig
 make
 ```
