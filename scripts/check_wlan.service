@@ -1,0 +1,8 @@
+[Unit]
+Description=Check Wlan
+ 
+[Service]
+ExecStart=/usr/local/bin/check_wlan.sh
+ 
+[Install]
+WantedBy=default.target
