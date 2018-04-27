@@ -118,7 +118,7 @@ make iasl
 make
 ```
 
-If you get an error at ``make``, you need the [Pixel C Image](pixel-c-image]. Download it if you haven't already, then run the following (while still in the ``coreboot`` directory):
+If you get an error at ``make``, you need the [Pixel C Image](pixel-c-image). Download it if you haven't already, then run the following (while still in the ``coreboot`` directory):
 
 ```
 make -C util/cbfstool
