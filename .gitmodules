@@ -1,15 +1,15 @@
 [submodule "shofel2"]
-	path = shofel2
+	path = bootloader/shofel2
 	url = https://github.com/fail0verflow/shofel2.git
 [submodule "coreboot"]
-	path = coreboot
+	path = bootloader/coreboot
 	url = https://github.com/fail0verflow/switch-coreboot.git
 [submodule "u-boot"]
-	path = u-boot
+	path = bootloader/u-boot
 	url = https://github.com/fail0verflow/switch-u-boot.git
 [submodule "linux"]
-	path = linux
+	path = bootloader/linux
 	url = https://github.com/fail0verflow/switch-linux.git
 [submodule "imx_usb_loader"]
-	path = imx_usb_loader
+	path = bootloader/imx_usb_loader
 	url = https://github.com/boundarydevices/imx_usb_loader.git
