@@ -106,7 +106,7 @@ make
 ### Build u-boot
 ```
 cd bootloader/u-boot
-make nintendo_switch_defconfig
+make nintendo-switch_defconfig
 make
 ```
 
