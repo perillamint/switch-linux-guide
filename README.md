@@ -76,7 +76,7 @@ Download the firmware-misc-nonfree package from [Debian sid](https://packages.de
 
 ```
 tar -xf downloads/firmware-nonfree_[version].orig.tar.xz -C downloads
-sudo mv -r downloads/firmware-nonfree-[version]/nvidia /lib/firmware
+sudo mv downloads/firmware-nonfree-[version]/nvidia /lib/firmware
 ```
 
 ### Broadcomm Firmware
