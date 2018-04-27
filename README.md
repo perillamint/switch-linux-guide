@@ -75,8 +75,8 @@ unzip downloads/ryu-mxb48j-factory-ce6d5a7b.zip -d downloads/pixel-c-image
 Download the firmware-misc-nonfree package from [Debian sid](https://packages.debian.org/sid/firmware-misc-nonfree) to your downloads folder. Extract this to your downloads folder and copy the ``nvidia`` directory to ``/lib/firmware/nvidia/``:
 
 ```
-tar -xf downloads/firmware-nonfree_[version].orig.tar.xz
-sudo mv -r ./firmware-nonfree_[version]/nvidia /lib/firmware
+tar -xf downloads/firmware-nonfree_[version].orig.tar.xz -C downloads
+sudo mv -r downloads/firmware-nonfree_[version]/nvidia /lib/firmware
 ```
 
 ### Broadcomm Firmware
