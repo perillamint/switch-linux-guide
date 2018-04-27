@@ -134,7 +134,7 @@ make
 ### Build linux
 ```
 cd bootloader/linux
-make nintendo_switch_defconfig
+make nintendo-switch_defconfig
 make
 ```
 
