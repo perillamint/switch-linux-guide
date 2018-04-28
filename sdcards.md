@@ -4,7 +4,7 @@
 
 * 64GB Samsung Evo
 * 128GB Samsung Evo
-* SDXC Sandisk Ultra
+* 64GB Sandisk Ultra
 * 32GB Sandisk Ultra
 ## Reported NOT Working:
 
