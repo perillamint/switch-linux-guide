@@ -4,7 +4,7 @@
 Nintendo did some mistakes while designing Switch, so fast SDHCI bus clock
 speed will corrupt communication between SD card and Switch.
 
-Limiting `UHS_SDR104_MAX_DTR` to `100000000` will solve this problem.
+Limiting SDHCI driver's `max-frequency` to `100000000` will solve this problem.
 
 ## Patched fork of Switch-Linux kernel
 https://github.com/perillamint/switch-linux/tree/sdhci-bus-fix has SDHCI fix patch
